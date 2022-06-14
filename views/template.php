@@ -36,11 +36,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       } else if ( $_SESSION["rol"] == 2 ){
         include "views/modulos/header.php";
-        include "views/modulos/main-sidebar-usuario.php";
+        include "views/modulos/main-sidebar.php";
       
       } else if ( $_SESSION["rol"] == 3 ){
         include "views/modulos/header.php";
-        include "views/modulos/main-sidebar-usuario.php";
+        include "views/modulos/main-sidebar.php";
       } 
 
 
