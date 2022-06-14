@@ -1,8 +1,6 @@
-
-
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Techno</b>CRM</a>
+    <b>TECHNO</b>crm
   </div>
   <!-- /.login-logo -->
   <div class="card">

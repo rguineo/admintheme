@@ -11,17 +11,17 @@ Class ControllerSesion {
 
 			$respuesta = (new ModeloSesion)->iniciarSesionMdl($tabla, $usuario);
 			
-			if($respuesta["usuario"] == $_POST["user"] && $respuesta["clave"] == $_POST["password"]) {
+			if($respuesta["user"] == $_POST["user"] && $respuesta["pass"] == $_POST["password"]) {
 
 				$_SESSION["autenticar"] = "ok";
-				$_SESSION["nombre"] = $respuesta["nombre_usuario"];
-				$_SESSION["apellido"] = $respuesta["apellido_usuario"];
+				$_SESSION["nombre"] = $respuesta["first_name"];
+				$_SESSION["apellido"] = $respuesta["last_name"];
 				
-				$_SESSION["id"] = $respuesta["id_usuario"];
-				$_SESSION["rol"] = $respuesta["id_rol"];
-				$_SESSION["id_empresa"] = $respuesta["id_empresa"];
-				$_SESSION["user"] = $respuesta["usuario"];
-				$_SESSION["password"] = $repuesta["clave"];
+				$_SESSION["id"] = $respuesta["id"];
+				$_SESSION["rol"] = $respuesta["level"];
+
+				$_SESSION["user"] = $respuesta["user"];
+				$_SESSION["password"] = $repuesta["pass"];
 
 				echo '
 					<script>
