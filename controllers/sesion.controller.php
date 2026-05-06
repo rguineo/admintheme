@@ -21,7 +21,7 @@ Class ControllerSesion {
 				$_SESSION["rol"] = $respuesta["level"];
 
 				$_SESSION["user"] = $respuesta["user"];
-				$_SESSION["password"] = $repuesta["pass"];
+				$_SESSION["password"] = $respuesta["pass"];
 
 				echo '
 					<script>

@@ -80,7 +80,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- Script Personales -->
 <script src="views/dist/js/jquery.Rut.js"></script>
-<script src="dist/js/recursos.js"></script>
+<script src="views/dist/js/recursos.js"></script>
 
 <script src="views/js/usuario.js"></script>
 
