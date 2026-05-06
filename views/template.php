@@ -26,22 +26,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="views/dist/css/editor.css"> -->
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed login-page">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed <?php echo (isset($_SESSION["autenticar"]) && $_SESSION["autenticar"] == "ok") ? '' : 'login-page'; ?>">
   <?php
 
     if ( isset($_SESSION["autenticar"]) && $_SESSION["autenticar"] == "ok" ) {
-      if ( $_SESSION["rol"] == 1 ){
-        include "views/modulos/header.php";
-        include "views/modulos/main-sidebar.php";
-
-      } else if ( $_SESSION["rol"] == 2 ){
-        include "views/modulos/header.php";
-        include "views/modulos/main-sidebar.php";
       
-      } else if ( $_SESSION["rol"] == 3 ){
-        include "views/modulos/header.php";
-        include "views/modulos/main-sidebar.php";
-      } 
+      include "views/modulos/header.php";
+      include "views/modulos/main-sidebar.php";
 
 
       if( isset($_GET["ruta"]) ) {
